@@ -1,0 +1,26 @@
+docker: image operating system "linux" cannot be used on this platform.
+See 'docker run --help'.
+
+C:\DevOps\docker\arm-visualizer-master>docker run -i -d -P ytechie/armviz:v2
+docker: Error response from daemon: Bad response from Docker engine.
+See 'docker run --help'.
+
+C:\DevOps\docker\arm-visualizer-master>docker run -i -d -P ytechie/armviz:v2
+Unable to find image 'ytechie/armviz:v2' locally
+v2: Pulling from ytechie/armviz
+e7bb522d92ff: Pull complete
+0f4d7753723e: Pull complete
+91470a14d63f: Pull complete
+3d2eabf33747: Pull complete
+9175dc8323b5: Pull complete
+Digest: sha256:74d2ae78deefde82031c639e78d382fddcb3e3661a8026eb47be3f3023acd3c3
+Status: Downloaded newer image for ytechie/armviz:v2
+28163468d08280b52489be2808e5cdd71c05d23d17cb3af1bb573983fa58e556
+
+C:\DevOps\docker\arm-visualizer-master>docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                   NAMES
+28163468d082        ytechie/armviz:v2   "nginx -g 'daemon of…"   57 seconds ago      Up 53 seconds       0.0.0.0:32768->80/tcp   magical_blackwell
+
+C:\DevOps\docker\arm-visualizer-master>
+
+
